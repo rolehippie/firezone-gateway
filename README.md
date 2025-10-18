@@ -5,7 +5,7 @@
 [![Readme Workflow](https://github.com/rolehippie/firezone-gateway/actions/workflows/docs.yml/badge.svg)](https://github.com/rolehippie/firezone-gateway/actions/workflows/docs.yml)
 [![Galaxy Workflow](https://github.com/rolehippie/firezone-gateway/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/firezone-gateway/actions/workflows/galaxy.yml)
 [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/firezone-gateway)](https://github.com/rolehippie/firezone-gateway/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/role-rolehippie.openstack__exporter-blue)](https://galaxy.ansible.com/rolehippie/firezone_gateway)
+[![Ansible Role](https://img.shields.io/badge/role-rolehippie.firezone__gateway-blue)](https://galaxy.ansible.com/rolehippie/firezone_gateway)
 
 Ansible role to install and configure a Firezone gateway.
 
