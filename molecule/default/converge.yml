@@ -1,0 +1,10 @@
+---
+- name: Converge
+  hosts: all
+  # vars:
+  #   firezone_gateway_no_telemetry: true
+  # roles:
+  #   - role: rolehippie.docker
+  #   - role: rolehippie.firezone_gateway
+
+...

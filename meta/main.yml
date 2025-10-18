@@ -1,0 +1,43 @@
+---
+# @meta author:value: [Thomas Boerger](https://github.com/tboerger)
+# @meta description: >
+# [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/firezone-gateway)
+# [![General Workflow](https://github.com/rolehippie/firezone-gateway/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/firezone-gateway/actions/workflows/general.yml)
+# [![Readme Workflow](https://github.com/rolehippie/firezone-gateway/actions/workflows/docs.yml/badge.svg)](https://github.com/rolehippie/firezone-gateway/actions/workflows/docs.yml)
+# [![Galaxy Workflow](https://github.com/rolehippie/firezone-gateway/actions/workflows/galaxy.yml/badge.svg)](https://github.com/rolehippie/firezone-gateway/actions/workflows/galaxy.yml)
+# [![License: Apache-2.0](https://img.shields.io/github/license/rolehippie/firezone-gateway)](https://github.com/rolehippie/firezone-gateway/blob/master/LICENSE)
+# [![Ansible Role](https://img.shields.io/badge/role-rolehippie.openstack__exporter-blue)](https://galaxy.ansible.com/rolehippie/firezone_gateway)
+#
+# Ansible role to install and configure a Firezone gateway.
+#
+# ## Sponsor
+#
+# Building and improving this Ansible role have been sponsored by my current and previous employers like **[Cloudpunks GmbH](https://cloudpunks.de)** and **[Proact Deutschland GmbH](https://www.proact.eu)**.
+# @end
+# @meta dependencies:value: >
+# [rolehippie.docker](https://github.com/rolehippie/docker)
+# [community.docker](https://github.com/ansible-collections/community.docker)
+# @end
+galaxy_info:
+  role_name: firezone_gateway
+  namespace: rolehippie
+  author: Thomas Boerger
+  description: Ansible role to install and configure a Firezone gateway
+  license: Apache-2.0
+  min_ansible_version: "2.10"
+  platforms:
+    - name: Ubuntu
+      versions:
+        - focal
+        - jammy
+        - noble
+  galaxy_tags:
+    - firezone
+    - vpn
+
+dependencies: []
+
+collections:
+  - community.docker
+
+...

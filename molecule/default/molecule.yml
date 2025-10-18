@@ -1,0 +1,61 @@
+---
+dependency:
+  name: galaxy
+  options:
+    role-file: requirements.yml
+  env:
+    ANSIBLE_GALAXY_DISPLAY_PROGRESS: "false"
+
+driver:
+  name: containers
+
+platforms:
+  - name: firezone-gateway-ubuntu-24
+    image: docker.io/geerlingguy/docker-ubuntu2404-ansible:latest
+    hostname: ubuntu
+    privileged: true
+    pre_build_image: true
+    override_command: false
+    cgroupns_mode: host
+    systemd: always
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    environment:
+      container: docker
+  - name: firezone-gateway-ubuntu-22
+    image: docker.io/geerlingguy/docker-ubuntu2204-ansible:latest
+    hostname: ubuntu
+    privileged: true
+    pre_build_image: true
+    override_command: false
+    cgroupns_mode: host
+    systemd: always
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    environment:
+      container: docker
+  - name: firezone-gateway-ubuntu-20
+    image: docker.io/geerlingguy/docker-ubuntu2004-ansible:latest
+    hostname: ubuntu
+    privileged: true
+    pre_build_image: true
+    override_command: false
+    cgroupns_mode: host
+    systemd: always
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    environment:
+      container: docker
+
+provisioner:
+  name: ansible
+  connection_options:
+    ansible_become: true
+  env:
+    ANSIBLE_FILTER_PLUGINS: "${ANSIBLE_FILTER_PLUGINS:-./plugins/filter}"
+    ANSIBLE_LIBRARY: "${ANSIBLE_LIBRARY:-./library}"
+
+verifier:
+  name: testinfra
+
+...

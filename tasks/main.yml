@@ -1,0 +1,53 @@
+---
+- name: Write default config
+  notify:
+    - Restart firezone-gateway
+  ansible.builtin.template:
+    src: default.j2
+    dest: /etc/default/firezone-gateway
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - firezone-gateway
+
+- name: Prepare service file
+  notify:
+    - Restart firezone-gateway
+  ansible.builtin.template:
+    src: service.j2
+    dest: /etc/systemd/system/firezone-gateway.service
+    owner: root
+    group: root
+    mode: u=rw,g=r,o=r
+  tags:
+    - firezone-gateway
+
+- name: Pull docker image
+  when:
+    - firezone_gateway_pull_image
+  community.docker.docker_image:
+    name: "{{ firezone_gateway_image }}"
+    source: pull
+  tags:
+    - firezone-gateway
+
+- name: Create docker network
+  when:
+    - false if firezone_gateway_network is none else (firezone_gateway_network | length > 0)
+  community.docker.docker_network:
+    name: '{{ firezone_gateway_network }}'
+  tags:
+    - firezone-gateway
+
+- name: Start exporter service
+  ansible.builtin.systemd:
+    name: firezone-gateway
+    state: started
+    daemon_reload: true
+    masked: false
+    enabled: true
+  tags:
+    - firezone-gateway
+
+...

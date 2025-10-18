@@ -1,0 +1,8 @@
+---
+- name: Restart firezone-gateway
+  ansible.builtin.systemd:
+    name: firezone-gateway
+    state: restarted
+    daemon_reload: true
+
+...

@@ -1,0 +1,35 @@
+[Unit]
+Description=Firezone Gateway
+
+Wants=docker.service
+After=docker.service
+
+[Service]
+Restart=always
+RestartSec=10s
+EnvironmentFile=/etc/environment
+
+ExecStop=/bin/sh -c '/usr/bin/docker ps | /bin/grep %p 1> /dev/null && /usr/bin/docker stop %p || true'
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps | /bin/grep %p 1> /dev/null && /usr/bin/docker kill %p || true'
+ExecStartPre=/bin/sh -c '/usr/bin/docker ps -a | /bin/grep %p 1> /dev/null && /usr/bin/docker rm %p || true'
+ExecStart=/usr/bin/docker run --rm \
+  --name %p \
+  --hostname %p \
+  --env-file /etc/default/firezone-gateway \
+{% if firezone_gateway_network | default(false) %}
+  --network {{ firezone_gateway_network }} \
+{% endif %}
+{% for cap in firezone_gateway_caps %}
+  --cap-add {{ cap }} \
+{% endfor %}
+{% for sysctl in firezone_gateway_sysctls %}
+  --sysctl {{ sysctl }} \
+{% endfor %}
+{% for device in firezone_gateway_devices %}
+  --device {{ device }} \
+{% endfor %}
+  --health-cmd="ip link | grep tun-firezone" \
+  {{ firezone_gateway_image }}
+
+[Install]
+WantedBy=multi-user.target

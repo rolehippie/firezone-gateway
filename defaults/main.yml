@@ -1,0 +1,49 @@
+---
+# @var firezone_gateway_version:description: Version of the Docker image
+# renovate: datasource=github-releases depName=ghcr.io/firezone/gateway
+firezone_gateway_version: 1.4.17
+
+# @var firezone_gateway_image:description: Docker image to use and run
+firezone_gateway_image: "ghcr.io/firezone/gateway:{{ firezone_gateway_version }}"
+
+# @var firezone_gateway_pull_image:description: Pull image as part of the tasks
+firezone_gateway_pull_image: true
+
+# @var firezone_gateway_network:description: A Docker network to assign the container
+firezone_gateway_network:
+
+# @var firezone_gateway_ident:description: Identifier of the firezone gateway
+firezone_gateway_ident:
+
+# @var firezone_gateway_token:description: Token of the firezone gateway
+firezone_gateway_token:
+
+# @var firezone_gateway_name:description: Name of the firezone gateway
+firezone_gateway_name: "{{ inventory_hostname }}"
+
+# @var firezone_gateway_no_telemetry:description: Disable telemtry collection
+firezone_gateway_no_telemetry: false
+
+# @var firezone_gateway_num_tun_threads:description: Number of TUN threads
+firezone_gateway_num_tun_threads: 1
+
+# @var firezone_gateway_log_level:description: Log level of the forezone gateway
+firezone_gateway_log_level: info
+
+# @var firezone_gateway_caps:description: List of capability settings
+firezone_gateway_caps:
+  - NET_ADMIN
+
+# @var firezone_gateway_sysctls:description: List of sysctl settings
+firezone_gateway_sysctls:
+  - net.ipv4.ip_forward=1
+  - net.ipv4.conf.all.src_valid_mark=1
+  - net.ipv6.conf.all.disable_ipv6=0
+  - net.ipv6.conf.all.forwarding=1
+  - net.ipv6.conf.default.forwarding=1
+
+# @var firezone_gateway_devices:description: List of required devices
+firezone_gateway_devices:
+  - /dev/net/tun:/dev/net/tun
+
+...
