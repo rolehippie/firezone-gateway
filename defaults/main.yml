@@ -1,6 +1,6 @@
 ---
 # @var firezone_gateway_version:description: Version of the Docker image
-# renovate: datasource=github-releases depName=ghcr.io/firezone/gateway
+# renovate: datasource=docker depName=ghcr.io/firezone/gateway
 firezone_gateway_version: 1.4.17
 
 # @var firezone_gateway_image:description: Docker image to use and run
