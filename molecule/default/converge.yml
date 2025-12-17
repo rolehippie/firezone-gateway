@@ -2,6 +2,8 @@
 - name: Converge
   hosts: all
   # vars:
+  #   docker_daemon_config:
+  #     storage-driver: vfs
   #   firezone_gateway_no_telemetry: true
   # roles:
   #   - role: rolehippie.docker
