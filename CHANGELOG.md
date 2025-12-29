@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/rolehippie/firezone-gateway/compare/v2.0.0...v2.0.1) (2025-12-29)
+
+
+### Bugfixes
+
+* **patch:** update ghcr.io/firezone/gateway docker tag to v1.4.19 ([#16](https://github.com/rolehippie/firezone-gateway/issues/16)) ([d9ee754](https://github.com/rolehippie/firezone-gateway/commit/d9ee754e90704afa0e2cd667069f2d83893f9ec2))
+
 ## [2.0.0](https://github.com/rolehippie/firezone-gateway/compare/v1.0.0...v2.0.0) (2025-11-10)
 
 
