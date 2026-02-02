@@ -177,7 +177,7 @@ Version of the Docker image
 #### Default value
 
 ```YAML
-firezone_gateway_version: 1.4.19
+firezone_gateway_version: 1.5.0
 ```
 
 ## Discovered Tags
