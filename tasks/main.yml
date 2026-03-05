@@ -34,7 +34,8 @@
 
 - name: Create docker network
   when:
-    - false if firezone_gateway_network is none else (firezone_gateway_network | length > 0)
+    - firezone_gateway_network is not none
+    - firezone_gateway_network | length > 0
   community.docker.docker_network:
     name: '{{ firezone_gateway_network }}'
   tags:
