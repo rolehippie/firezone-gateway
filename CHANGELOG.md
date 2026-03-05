@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.1.1](https://github.com/rolehippie/firezone-gateway/compare/v2.1.0...v2.1.1) (2026-03-05)
+
+### Bugfixes
+
+* improve conditional behavior ([b892dab](https://github.com/rolehippie/firezone-gateway/commit/b892dabcf750190630ba2e9d38d67b5a97e98f2f))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([2a6ec36](https://github.com/rolehippie/firezone-gateway/commit/2a6ec3622e99bfa7fdc3290cfdae79f9bd512bf0))
+* **flake:** updated lockfile [skip ci] ([8a26982](https://github.com/rolehippie/firezone-gateway/commit/8a269820919c80c27dc647ab77928d6afeba8f14))
+* **flake:** updated lockfile [skip ci] ([ed841ba](https://github.com/rolehippie/firezone-gateway/commit/ed841ba5257ea7099ef68cc48c886d6732e1ab2b))
+* **flake:** updated lockfile [skip ci] ([ad9f4f2](https://github.com/rolehippie/firezone-gateway/commit/ad9f4f259a9c21ee9f7f505cbeecf5b3207bd21a))
+* **flake:** updated lockfile [skip ci] ([87cb265](https://github.com/rolehippie/firezone-gateway/commit/87cb26594e0d9ab4cd076b80b6985063ae2380a4))
+* replace nixfmt package ([f64e813](https://github.com/rolehippie/firezone-gateway/commit/f64e8138669ec60a0c199acaca776dbb831e234d))
+
 ## [2.1.0](https://github.com/rolehippie/firezone-gateway/compare/v2.0.1...v2.1.0) (2026-02-02)
 
 ### Dependencies
