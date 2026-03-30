@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.2.0](https://github.com/rolehippie/firezone-gateway/compare/v2.1.2...v2.2.0) (2026-03-30)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.1.0,<5.2.0 ([#24](https://github.com/rolehippie/firezone-gateway/issues/24)) ([fa55dda](https://github.com/rolehippie/firezone-gateway/commit/fa55dda68fc11f2ca3119a64d484fcdf25fe15cd))
+
+### Miscellaneous
+
+* **flake:** updated lockfile [skip ci] ([8fbb42f](https://github.com/rolehippie/firezone-gateway/commit/8fbb42f935d627048dbd2650a144fa07d5c93701))
+
 ## [2.1.2](https://github.com/rolehippie/firezone-gateway/compare/v2.1.1...v2.1.2) (2026-03-23)
 
 ### Dependencies
