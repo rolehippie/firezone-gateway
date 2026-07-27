@@ -1,5 +1,7 @@
 # Changelog
 
+## [2.4.0](https://github.com/rolehippie/firezone-gateway/compare/v2.3.1...v2.4.0) (2026-07-27)
+
 ## [2.3.1](https://github.com/rolehippie/firezone-gateway/compare/v2.3.0...v2.3.1) (2026-05-04)
 
 ### Dependencies
