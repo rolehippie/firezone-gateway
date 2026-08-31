@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.6.1](https://github.com/rolehippie/firezone-gateway/compare/v2.6.0...v2.6.1) (2026-08-31)
+
+### Dependencies
+
+* **patch:** update dependency pipx:ansible-doctor to v8.4.1 ([#39](https://github.com/rolehippie/firezone-gateway/issues/39)) ([9494f06](https://github.com/rolehippie/firezone-gateway/commit/9494f066c67f5530c27823214886592ced62c156))
+
 ## [2.6.0](https://github.com/rolehippie/firezone-gateway/compare/v2.5.0...v2.6.0) (2026-08-17)
 
 ### Dependencies
