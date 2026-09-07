@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.7.0](https://github.com/rolehippie/firezone-gateway/compare/v2.6.1...v2.7.0) (2026-09-07)
+
+### Features
+
+* add separate requirements for molecule run ([c91faf8](https://github.com/rolehippie/firezone-gateway/commit/c91faf8d81f6fc111cb10fe86ae387c246b22efc))
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.3.0,<5.4.0 ([#40](https://github.com/rolehippie/firezone-gateway/issues/40)) ([36800b0](https://github.com/rolehippie/firezone-gateway/commit/36800b04ca1aca479f2a5d581d2fb9f0322cb6ab))
+
 ## [2.6.1](https://github.com/rolehippie/firezone-gateway/compare/v2.6.0...v2.6.1) (2026-08-31)
 
 ### Dependencies
