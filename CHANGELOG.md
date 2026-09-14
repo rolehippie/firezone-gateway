@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.7.1](https://github.com/rolehippie/firezone-gateway/compare/v2.7.0...v2.7.1) (2026-09-14)
+
+### Dependencies
+
+* **mise:** update dependency pipx:ansible-core to v2.21.4 ([#42](https://github.com/rolehippie/firezone-gateway/issues/42)) ([aacc0da](https://github.com/rolehippie/firezone-gateway/commit/aacc0dae43d101e017405f925419b59403f7f0eb))
+* **mise:** update dependency prek to v0.5.3 ([#43](https://github.com/rolehippie/firezone-gateway/issues/43)) ([c24d0dc](https://github.com/rolehippie/firezone-gateway/commit/c24d0dc6d580c094b5797ecad0784bb88bbd0656))
+* **patch:** update ghcr.io/firezone/gateway docker tag to v1.6.1 ([#41](https://github.com/rolehippie/firezone-gateway/issues/41)) ([852f7a1](https://github.com/rolehippie/firezone-gateway/commit/852f7a194e66595fcdc64716fba505b091c6c460))
+
 ## [2.7.0](https://github.com/rolehippie/firezone-gateway/compare/v2.6.1...v2.7.0) (2026-09-07)
 
 ### Features
