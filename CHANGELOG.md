@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.7.2](https://github.com/rolehippie/firezone-gateway/compare/v2.7.1...v2.7.2) (2026-09-28)
+
+### Dependencies
+
+* **mise:** update dependency pipx:ansible-doctor to v8.4.2 ([#44](https://github.com/rolehippie/firezone-gateway/issues/44)) ([0d98628](https://github.com/rolehippie/firezone-gateway/commit/0d9862875eeb728de31dabc04d4a0d9fb36e0f9f))
+* **mise:** update dependency pipx:ansible-lint to v26.9.0 ([#45](https://github.com/rolehippie/firezone-gateway/issues/45)) ([20f0c58](https://github.com/rolehippie/firezone-gateway/commit/20f0c5807d89951ad526afc36c29ffebf30d75ae))
+* **mise:** update dependency pipx:molecule to v26.9.0 ([#46](https://github.com/rolehippie/firezone-gateway/issues/46)) ([0591152](https://github.com/rolehippie/firezone-gateway/commit/0591152f2040fd1854d80b93709212f832504692))
+* **patch:** update ghcr.io/firezone/gateway docker tag to v1.6.2 ([#47](https://github.com/rolehippie/firezone-gateway/issues/47)) ([75bf144](https://github.com/rolehippie/firezone-gateway/commit/75bf14462cec8da18a826b4cf609a56bab232c73))
+
 ## [2.7.1](https://github.com/rolehippie/firezone-gateway/compare/v2.7.0...v2.7.1) (2026-09-14)
 
 ### Dependencies
