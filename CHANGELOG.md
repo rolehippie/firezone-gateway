@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.8.0](https://github.com/rolehippie/firezone-gateway/compare/v2.7.2...v2.8.0) (2026-10-05)
+
+### Dependencies
+
+* **minor:** update dependency community.docker to >=5.4.0,<5.5.0 ([#50](https://github.com/rolehippie/firezone-gateway/issues/50)) ([c3fbc7e](https://github.com/rolehippie/firezone-gateway/commit/c3fbc7e7aaad49954013ca56edec297ea24badd3))
+* **mise:** update dependency prek to v0.5.4 ([#48](https://github.com/rolehippie/firezone-gateway/issues/48)) ([aedf8cf](https://github.com/rolehippie/firezone-gateway/commit/aedf8cf04719af30f34b2b6cfabc181cda5ae160))
+* **mise:** update dependency prek to v0.5.5 ([#51](https://github.com/rolehippie/firezone-gateway/issues/51)) ([483fc53](https://github.com/rolehippie/firezone-gateway/commit/483fc530c16d0b8dc04c9e566b36417f398c7b8b))
+
 ## [2.7.2](https://github.com/rolehippie/firezone-gateway/compare/v2.7.1...v2.7.2) (2026-09-28)
 
 ### Dependencies
