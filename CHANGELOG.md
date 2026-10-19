@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.8.1](https://github.com/rolehippie/firezone-gateway/compare/v2.8.0...v2.8.1) (2026-10-19)
+
+### Dependencies
+
+* **mise:** update dependency pipx:ansible-core to v2.21.5 ([#52](https://github.com/rolehippie/firezone-gateway/issues/52)) ([22c3464](https://github.com/rolehippie/firezone-gateway/commit/22c34644a5ec1f929fcd8cf5aec4ff82a950ff75))
+* **mise:** update dependency pipx:ansible-doctor to v8.4.3 ([#53](https://github.com/rolehippie/firezone-gateway/issues/53)) ([a1a5d37](https://github.com/rolehippie/firezone-gateway/commit/a1a5d375d3f9c74abca7ce79d5f336221d84cd5e))
+* **mise:** update dependency pipx:ansible-lint to v26.10.0 ([#54](https://github.com/rolehippie/firezone-gateway/issues/54)) ([5f8ef6b](https://github.com/rolehippie/firezone-gateway/commit/5f8ef6b9fc30ae89c79c94bf065b9bf0a4119502))
+* **mise:** update dependency pipx:ansible-lint to v26.10.1 ([#56](https://github.com/rolehippie/firezone-gateway/issues/56)) ([89b5867](https://github.com/rolehippie/firezone-gateway/commit/89b58675f1b94b6f3c0d01ded6e39776dec75a07))
+* **mise:** update dependency pipx:molecule to v26.10.0 ([#55](https://github.com/rolehippie/firezone-gateway/issues/55)) ([603d44c](https://github.com/rolehippie/firezone-gateway/commit/603d44c7c61d041d67c6aab05a6cd80b50b86645))
+* **mise:** update dependency prek to v0.5.6 ([#58](https://github.com/rolehippie/firezone-gateway/issues/58)) ([2e82641](https://github.com/rolehippie/firezone-gateway/commit/2e82641e57027decb6e7a083d948c08c11296ad4))
+* **patch:** update ghcr.io/firezone/gateway docker tag to v1.6.3 ([#57](https://github.com/rolehippie/firezone-gateway/issues/57)) ([e3cb1fc](https://github.com/rolehippie/firezone-gateway/commit/e3cb1fc61d348c91b657104702fec9d4f7b3ff19))
+
 ## [2.8.0](https://github.com/rolehippie/firezone-gateway/compare/v2.7.2...v2.8.0) (2026-10-05)
 
 ### Dependencies
